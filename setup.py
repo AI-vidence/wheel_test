@@ -5,7 +5,10 @@ extensions = [
     Extension(
         name="extension_name",
         sources= ["src/mypackage/secret_module.pyx", 
-                  "src/mypackage/*.py"],
+                  "src/mypackage/__init__.py",
+                  "src/mypackage/a_module.py",
+                  "src/mypackage/another_module.py",
+                  ],
         #include_dirs=[...],
         #libraries=[...],
         #library_dirs=[...]),
