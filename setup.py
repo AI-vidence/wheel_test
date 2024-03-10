@@ -4,7 +4,8 @@ from Cython.Build import cythonize
 extensions = [
     Extension(
         name="extension_name",
-        sources= ["src/mypackage/secret_module.pyx"],
+        sources= ["src/mypackage/secret_module.pyx", 
+                  "src/mypackage/*.py"],
         #include_dirs=[...],
         #libraries=[...],
         #library_dirs=[...]),
